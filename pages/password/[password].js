@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { decrypt } from "../../utils/decrypt";
-import { Flex, useToast, Button, Text } from "@chakra-ui/react";
+import { Flex, Button, Text } from "@chakra-ui/react";
 import { copyToClipboard } from '../../utils/copyclipboard';
 
 const fetchPassword = async (pass, detailToast) => {
@@ -27,7 +27,6 @@ const fetchPassword = async (pass, detailToast) => {
 
 const Password = () => {
     const router = useRouter();
-
 
     return (
         <Flex direction='column' w='100%' h='100vh' justifyContent='center' align='center' color='brand.100' bg='#f0ece4'>
